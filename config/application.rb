@@ -11,5 +11,9 @@ module Reddit
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-  end
+		config.generators do |g|
+			#g.test_framework false #不會產生rspec相關測試檔案
+		end
+
+	end
 end

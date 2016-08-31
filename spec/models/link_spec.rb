@@ -12,7 +12,8 @@ RSpec.describe Link, type: :model do
     l1 = Link.create(title:"1_url", url:"www.abc")
     l2 = Link.create(title:"2_url", url:"www.dfsfsd")
 
-    expect(Link.reload).to eq([l2, l1])
-  end
+    expect(Link.reload).to eq([l2, l1])#定一個reload class method
+  	expect(Link.all).to eq([l2,l1])#model default scope
+	end
 
 end

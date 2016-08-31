@@ -1,6 +1,7 @@
 class Link < ApplicationRecord
-  has_many :comments
-  #p "link instance_methods:#{Link.instance_methods.sort}"
+  has_many :comments, -> {order(created_at: :desc)}
+  default_scope{ order(id: :desc) }
+#p "link instance_methods:#{Link.instance_methods.sort}"
 
 
   def self.reload
