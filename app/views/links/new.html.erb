@@ -1,0 +1,8 @@
+<div class="container">
+<h1>來分享一則有去的連結吧 ^.^b</h1>
+<%= simple_form_for @link do |f| %>
+  <%= f.input :title, label:"標題"%>
+	<%= f.input :url, label:"連結", placeholder: '輸入您想分享的連結'%>
+	<%= f.submit class: "btn btn-default"%>
+<% end %>
+</div>
