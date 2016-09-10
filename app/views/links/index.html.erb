@@ -1,2 +1,11 @@
-<h1>Welcome to kobe Reddit</h1>
+<h1>Welcome to kobe Reddit</h1> 
 <%= link_to '新增貼文', new_link_path, class: 'btn btn-primary'%>
+
+<% @links.each do |link| %>
+<div class="list-group">
+  <a href="#" class="list-group-item">
+	<h4 class="list-group-item-heading"><%=link.title%></h4>
+		<p class="list-group-item-text"><%=link.url%></p>
+	</a>
+</div>
+<%end%>

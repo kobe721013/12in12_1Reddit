@@ -2,6 +2,7 @@ class LinksController < ApplicationController
 
 	def index
 		puts "links#index start"
+		@links = Link.all
 	end
 
 	def new
