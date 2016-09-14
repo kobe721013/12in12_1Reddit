@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 #add rspec by kobe
+gem 'devise','4.2.0'
 
 gem 'simple_form'
 gem 'bootstrap-sass'
