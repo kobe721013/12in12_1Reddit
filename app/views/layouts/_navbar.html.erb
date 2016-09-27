@@ -1,7 +1,20 @@
 <ul class="nav navbar-nav">
 	<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-	<li><a href="#">About</a></li>
-	<li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contact</a></li>
+	<li>
+		<%= link_to wow_about_path do 
+			"<span class='glyphicon glyphicon-eye-open'>About</span>".html_safe
+		end
+		%>
+	</li>
+	<li>
+		<%= link_to wow_contact_path do
+			"<span class='glyphicon glyphicon-phone-alt'>Contact</span>".html_safe
+			
+		end 
+		%>
+		<!--a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contact</a-->
+
+	</li>
 </ul>
 
 <ul class="nav navbar-nav navbar-right">

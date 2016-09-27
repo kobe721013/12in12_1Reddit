@@ -12,7 +12,10 @@ module Reddit
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 		config.generators do |g|
-			#g.test_framework false #不會產生rspec相關測試檔案
+			g.test_framework false #不會產生rspec相關測試檔案
+			g.stylesheets false
+			g.javascripts false
+			g.helper false
 		end
 
 	end
