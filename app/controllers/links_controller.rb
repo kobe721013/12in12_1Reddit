@@ -8,12 +8,14 @@ class LinksController < ApplicationController
 
 	def new
 		puts "links#new start"
-		@link = Link.new
-
+		#@link = Link.new
+		@link = current_user.links.build
 	end
 
 	def create
-		@link = Link.new(link_params)
+		#@link = Link.new(link_params)
+		@link = current_user.links.build(link_params)
+
 		if(@link.save)
 			redirect_to links_path, notice:"success !!!"
 		else
@@ -21,6 +23,10 @@ class LinksController < ApplicationController
 		end
 
 	end
+
+	def show
+		@link = Link.find(params[:id])
+	end	
 
 	private
 		def link_params
