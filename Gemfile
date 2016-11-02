@@ -32,7 +32,8 @@ gem 'jbuilder', '~> 2.5'
 
 #add rspec by kobe
 gem 'devise','4.2.0'
-
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
 gem 'simple_form'
 gem 'bootstrap-sass'
 group :development, :test do

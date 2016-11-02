@@ -23,5 +23,4 @@ module ApplicationHelper
 	  "<li>#{signin_data}</li><li>#{register_data}</li>".html_safe
 	end
   end
-
 end

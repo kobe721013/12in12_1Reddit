@@ -3,7 +3,10 @@ class LinksController < ApplicationController
 
 	def index
 		puts "links#index start"
-		@links = Link.all
+		#@links = Link.all
+		#debugger
+		@links = Link.page(params[:page]).per(5)
+		
 	end
 
 	def new
