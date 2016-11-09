@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree .
 document.addEventListener("turbolinks:load", function() {
-	alert("test:"+$('li.active').html());
+	//alert("test:"+$('li.active').html());
     if ($('li.active').html() != undefined) {
            $('li.active').removeClass('active');
 	}

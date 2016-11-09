@@ -1,3 +1,6 @@
+<%= link_to new_link_path do%>
+  <span class="glyphicon glyphicon-plus">新增連結</span>
+<%end%>
 <%= paginate @links, theme:'twitter-bootstrap-3', :pagination_class => "pagination-small pagination-centered"%>
 <% @links.each do |link| %>
   <div class="link row clearfix">
@@ -9,12 +12,12 @@
     <div class="btn-group">
       <a class="btn btn-default btn-sm" href="<%= link.url %>" target="_blank">Visit Link</a>
       <%= link_to links_path, method: :put, class: "btn btn-default btn-sm" do %>
-        <span class="glyphicon glyphicon-chevron-up"></span>
+        <span class="glyphicon glyphicon-thumbs-up"></span>
         Upvote
         <%= 5 %>
       <% end %>
       <%= link_to links_path, method: :put, class: "btn btn-default btn-sm" do %>
-        <span class="glyphicon glyphicon-chevron-down">
+        <span class="glyphicon glyphicon-thumbs-down">
         Downvote
         <%= 5 %>
       <% end %>
